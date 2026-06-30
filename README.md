@@ -24,8 +24,8 @@ Here is a summary of the problems solved across different levels. I update this 
 
 ---
 
-Developed and maintained by **Shadi Zainaldeen**.
+
 
 ```
-
+Developed and maintained by Shadi Zainaldeen.
 ```
