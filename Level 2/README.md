@@ -18,6 +18,6 @@ This Level focuses on:
 
 ## 📊 Level Statistics
 
-🔹 Total problems: 51  
-🔹 Status: ✅ Completed  
+🔹 Total problems: 50  
+🔹 Status: 🟡 In Progress  
 🔹 Language used: C++
