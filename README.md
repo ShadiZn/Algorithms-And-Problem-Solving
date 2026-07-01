@@ -11,7 +11,7 @@ Here is a summary of the problems solved across different levels. I update this 
 | Level | Problems Solved | Status |
 | --- | --- | --- |
 | **Level 01** |   `50 / 50` | 🟢 Completed |
-| **Level 02** |   `00 / 50` | 🟡 In Progress |
+| **Level 02** |   `04 / 50` | 🟡 In Progress |
 | **Level 03** |   `00 / 00` | ⏳ Up Next |
 
 ---
