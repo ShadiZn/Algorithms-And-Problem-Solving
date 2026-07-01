@@ -4,7 +4,7 @@ using namespace std;
 
 int readPositiveNumber(string msg)
 {
-    int x;
+    int x = 0;
     do
     {
         cout << msg;
@@ -28,6 +28,7 @@ bool isPrime(int num)
 
 void printPrimesUntil(int n)
 {
+
     for (int i = 1; i <= n; i++)
         if (isPrime(i))
             cout << i << endl;
