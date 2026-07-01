@@ -1,45 +1,8 @@
+#include "myLib.h"
+
 #include <iostream>
+
 using namespace std;
-// Enums
-enum enWhatToSome
-{
-    All,
-    Odd,
-    Even
-};
-
-// Reading Functions
-
-void readArrayNumbers(float[], int);
-int readNumberOfElements();
-int readPositiveNumber(string);
-float readNumberInRange(float, float, string);
-float readNumber(string);
-
-// Validation Functions
-
-bool isEven(int);
-bool isPrime(int);
-bool validateNumInRange(float, float, float);
-
-// Conversions and Calculations
-
-int secondsToDays(int);
-int secondsToHours(int);
-int secondsToMinutes(int);
-float hoursToDays(float);
-float hoursToWeeks(float);
-float daysToWeeks(float);
-int sumNumbersInRange(int, int, enWhatToSome);
-
-// Other Functions
-
-void swap(float &, float &);
-
-int main()
-{
-    cout << daysToWeeks(8);
-}
 
 // Reading Functions
 
@@ -63,7 +26,7 @@ int readNumberOfElements()
 }
 int readPositiveNumber(string msg)
 {
-    int x;
+    int x = 0;
     do
     {
         cout << msg;
@@ -76,7 +39,7 @@ int readPositiveNumber(string msg)
 }
 float readNumberInRange(float from, float to, string msg)
 {
-    int x;
+    int x = 0;
     bool flag;
     do
     {
@@ -117,8 +80,12 @@ bool validateNumInRange(float num, float from, float to)
 {
     return (num >= from && num <= to);
 }
+bool isPerfect(int n)
+{
+    return (n == calcSumOfDivisors(n));
+}
 
-// Conversions and Calculations
+// Conversions
 
 int secondsToDays(int seconds)
 {
@@ -144,6 +111,9 @@ float daysToWeeks(float days)
 {
     return days / 7;
 }
+
+// Calculations
+
 int sumNumbersInRange(int from, int to, enWhatToSome condition)
 {
     int sum = 0;
@@ -159,6 +129,14 @@ int sumNumbersInRange(int from, int to, enWhatToSome condition)
             sum += i;
 
     return sum;
+}
+int calcSumOfDivisors(int n)
+{
+    int s = 0;
+    for (int i = 1; i <= n / 2; i++)
+        if (n % i == 0)
+            s += i;
+    return s;
 }
 
 // Other Functions
